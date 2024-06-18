@@ -1,0 +1,107 @@
+:root {
+  --color-red-light: #FF5F5D;
+  --color-blue-light: #3F7C85;
+  --color-white-light: #F2F2F2;
+  --color-gray-light: #D9D9D9;
+  --color-black: #000B0D;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bg-color-red {
+  background-color: var(--color-red-light) !important;
+}
+
+.bg-color-orange {
+  background-color: #D96941;
+}
+
+.bg-color-white {
+  background-color: var(--color-white-light) !important;
+}
+
+.bg-color-blue {
+  background-color: var(--color-blue-light) !important;
+}
+
+.bg-color-white-pure {
+  background-color: #FFFFFF !important;
+}
+
+.bg-color-gray {
+  background-color: var(--color-gray-light) !important;
+}
+
+.bg-color-black {
+  background-color: var(--color-black) !important;
+}
+
+.btn-click {
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.btn-click:hover {
+  color: #000000;
+  transition: .3s ease-in-out;
+}
+
+/*MENU STYLE*/
+.menu-hidden {
+  transform: translateX(0%) !important;
+  transition: .2s ease-in-out;
+}
+
+.menu {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  font-weight: 500;
+  transform: translateX(-100%);
+  transition: .2s ease-in-out;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li > * {
+  color: var(--color-black);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: .1s ease-in-out;
+}
+
+.list li {
+  padding: 8px 0px;
+}
+
+.list li a:hover {
+  transition: .1s ease-in-out;
+  padding: 8px 0px;
+  font-weight: 700;
+}
+
+/*TASK CARD*/
+.task-card {
+  user-select: none; 
+  cursor: grab;
+  margin-bottom: 10px;
+}
+
+.task-card > * {
+  color: #FFFFFF;
+}
+
+.task-card div a {
+  color: var(--color-white-light);
+  font-weight: 600;
+}
+
+/*DRAG AND DROP*/
+.dragging {
+  opacity: 0.5;
+}
